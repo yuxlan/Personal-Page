@@ -1,0 +1,27 @@
+{
+	"name":"personalpage",
+	"description":"a personal page",
+	"version":"1.0.0",
+	"repository":{
+		"type":"git"
+	},
+	"main":"server.js",
+	"scripts":{
+		"start":"babel-node server.js",
+		"watch":"nodemon --exec babel-node -- server.js"
+	},
+	"dependencies":{
+		"babel":"^5.6.23",
+		"express":"^4.13.1",
+		"serve-favicon":"^2.3.0",
+		"bootstrap":"^3.3.6",
+		"jquery":"^3.1.0"
+	},
+	"devDependencies":{
+		"bower":"^1.4.1",
+		"gulp":"^3.9.0",
+		"watchify":"^3.3.0"
+	},
+	"license":"MIT",
+	"author":"YuXLan"
+}
