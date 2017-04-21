@@ -1,289 +1,700 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <!-- Meta Data -->
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- END -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+	<meta name="description" content="a personal page writed in angular">
+	<meta name="author" content="YuXLan">
 
-    <title>YuXLan's Personal Page</title>
+	<title>YuXLan's Personal Page</title>
 
-    <!-- CSS All -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bicolor.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- END -->
+	<!-- if IE -->
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+	<!-- end if -->
+
+	<!-- begin CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- end CSS -->
+
+	<!-- begin script -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<!-- end script -->
 </head>
+
 <body>
 
-<div id="awd-site-wrap" class="bg bg-home">
+<!--begin container -->
+<div id="container">
+	
+	<!--begin intro -->
+	<div id="intro">
+	
+		<!--begin header_wrapper -->
+		<header id="header_wrapper">
+			
+			<!--begin header -->    
+			<div id="header" class="clearfix">
+				
+				<!--begin row -->
+				<div class="row">
+					
+					<!--begin twelvecol -->
+					<div class="twelvecol">
+					
+						<!--begin logo -->
+						<a href="index.html" id="logo">YuXLan</a>
+						<!--end logo -->
+						 
+						<!--begin nav -->
+						<ul id="nav">
+							<li>
+								<a href="#container">首页HOME</a>
+							</li>
+							<li>
+								<a href="#showcase">个人概况ABOUT</a>
+							</li>
+							<li>
+								<a href="#services">项目作品WORK</a>
+							</li>
+							<li>
+								<a href="#features">读书笔记NOTE</a>
+							</li>
+							<li class="last">
+								<a href="#subscribe">联系我CONTACT</a>
+							</li>
+						</ul>
+						<!--end nav -->
+												
+					</div>
+					<!--end twelvecol -->
+				
+				</div>
+				<!--end row -->
+					
+			</div>
+			<!--end header -->
+			
+		</header>
+		<!--end header_wrapper -->
+		
+		<!--begin home section -->
+		<section id="home">
+		
+			<div class="home_box bounce_fade">
+				
+				<span class="slider_text1">余小兰</span>
+				<br/><br/>
+				<span class="slider_text2">IT女青年； 主攻前端，了解后端； 兢兢业业数年，热爱至上。</span>
+				<span class="slider_text2">爱编程； 爱设计； 爱生活； 爱美食； 爱植物； 万年潜水党； 段子手偶尔放飞自我。</span>
+				<span class="slider_text2">唯美食与编程不可辜负。</span>
+				
+			</div>
+									
+		</section>
+		<!--end home section -->
+		
+	</div>
+	<!--end intro -->
+		
+	<!--begin nine_section_wrapper -->
+	<section id="showcase" class="nine_section_wrapper">
+		
+		<!--begin nine_section -->
+		<div class="nine_section">
+		  
+			<!--begin row -->
+			<div class="row">
+				
+				<!--begin twelvecol -->
+				<div class="twelvecol">
+				
+					<!--begin sixcol -->
+					<div class="sixcol padding_top left_fade">
 
-    <div id="bg">
-        <div id="overlay">
-            <div class="awd-site-bg bg-home"></div>
-            <div class="awd-site-bg bg-subscribe"></div>
-            <div class="awd-site-bg bg-about"></div>
-            <div class="awd-site-bg bg-contact"></div>
-            <div class="awd-site-bg bg-services"></div>
-        </div>
-        <canvas id="awd-site-canvas"></canvas>
-    </div>
+						<!--begin features_title_wrapper -->
+						<div class="features_title_wrapper">
+							<span class="features_number">01</span>
+							<span class="features_separator">/</span>
+							<span class="features_title">个人概况<br>ABOUT</span>
+						</div>
+						<!--end features_title_wrapper -->
 
-    <!-- START SITE HEADER -->
-    <header id="awd-site-header">
-        <div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="500">
-            <h1><a href="#" class="go-slide" data-slide="home"><i class="fa fa-commenting-o"></i><span>YXL</span></a></h1>
-        </div>
+						<!--begin quotes -->
+						<i class="fa fa-quote-left fa-3x pull-left grey"></i>
+						<h2><strong>专业技能</strong></h2>
+						<span class="sixcol">
+							<ul>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jQuery</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajax</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Photoshop</li>
+							</ul>
+						</span>
+						<span class="sixcol last">
+							<ul>
+								<li>bootstrap</li>
+								<li>animate</li>
+								<li>react</li>
+								<li>angular</li>
+								<li>vue</li>
+								<li>[ ……持续学习中 ]</li>
+							</ul>
+						</span>
+						<!--end quotes -->
 
-        <button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="500" data-role="toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+						<!--begin sixcol -->
+						<div class="sixcol">
+						
+							<ul>
+								<li><i class="fa fa-check grey"></i> &nbsp; 姓名：余小兰</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 性别：女</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 籍贯：浙江杭州</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 民族：汉</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 联系电话：13735501806</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 电子邮件：1763630782@qq.com</li>
+							</ul>
+														   
+						</div>
+						<!--end sixcol -->
+						
+						<!--begin sixcol -->
+						<div class="sixcol last">
+						
+							<ul>
+								<li><i class="fa fa-check grey"></i> &nbsp; 出生日期：1996.5.16</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 学历：本科</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 专业：软件工程</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; 院校：杭州电子科技大学计算机学院</li>
+								<li><i class="fa fa-check grey"></i> &nbsp; GitHub：https://github.com/yuxlan</li>
+								<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ 更多详见底部链接 ]</li>
+							</ul>
+														   
+						</div>
+						<!--end sixcol -->
+						
+					</div>
+					<!--end sixcol -->
+					
+					<!--begin sixcol -->
+					<div class="sixcol last right_fade">
+						
+						<img src="images/3.png" alt="picture">
+															   
+					</div>
+					<!--end sixcol -->
+					 
+				</div>
+				<!--end twelvecol -->
+				
+			</div>
+			<!--end row -->
+			
+		</div>
+		<!--end nine_section -->
+		
+	</section>
+	<!--end nine_section -->
 
-        <!-- START NAVIGATION -->
-        <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="500">
-            <div class="nav-container">
+	<!-- begin testimonials_wrapper -->
+	<div class="testimonials_wrapper">
+		<div class="testimonials_box bounce_fade">
+			<span class="testimonials_img"><i class="fa fa-quote-right fa-3x white"></i></span><br>
+			<span class="testimonials_text">I think success has no rules, but you can learn a lot from failure. <br/> 我认为成功没有定律,但你可从失败中学到很多东西。</span>
+			<br/>
+			<span class="testimonials_autor">- Jean Kerr  |  静·科尔 -</span>
+		</div>
+	</div>
+	<!-- end testimonials_wrapper -->
 
-                <!-- START NAVIGATION MENU ITEMS -->
-                <ul>
-                    <li><a href="#" data-slide="home" class="active">首页</a></li>
-                    <li><a href="#" data-slide="subscribe">关于</a></li>
-                    <li><a href="#" data-slide="about">项目</a></li>
-                    <li><a href="#" data-slide="services">笔记</a></li>
-                    <li><a href="#" data-slide="contact">联系</a></li>
-                </ul>
-                <!-- END NAVIGATION MENU ITEMS -->
+	<!--begin info_white_wrapper -->
+	<div id="services" class="info_white_wrapper">
+		
+		<!--begin info_white -->
+		<div class="info_white bounce_fade">
+			<h3></h3>
+			<h4></h4>
+		</div>
+		<!--end info_white -->
+			
+	</div>
+	<!--end info_white_wrapper -->
 
-            </div>
-        </nav>
-        <!-- END NAVIGATION -->
+	<!--begin nine_section_wrapper -->
+	<section class="nine_section_wrapper">
+		
+		<!--begin nine_section -->
+		<div class="nine_section up_fade">
+	   
+			<!--begin row -->
+			<div class="row">
+			
+				<!--begin twelvecol -->
+				<div class="twelvecol">
+					
+					<!--begin threecol -->
+					<div class="threecol">
+						
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
+									<!-- 放项目截图 -->
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
+						
+					</div>
+					<!--end threecol -->
+					
+					<!--begin threecol -->
+					<div class="threecol">
+						
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
 
-    </header>
-    <!-- END SITE HEADER -->
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
+						
+					</div>
+					<!--end threecol -->
+					
+					<!--begin threecol -->
+					<div class="threecol">
+						
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
 
-    <!-- START MAIN -->
-    <main id="awd-site-main">
-        <!-- START SECTION -->
-        <section id="awd-site-content">
-            <div class="sections-block">
-                <div class="slides">
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
+						
+					</div>
+					<!--end threecol -->
+					
+					<!--begin threecol -->
+					<div class="threecol last">
+						
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item last">
+							<div class="icon_wrapper">
+								<div class="icon_box">
 
-                    <div class="slides-wrap">
-                        <!-- HOME SECTION -->
-                        <div class="slide-item" data-slide-id="home">
-                            <!-- START CONTAINER -->
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- START SLIDE CONTENT-->
-                                        <div class="slide-content">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 svm">
-                                                    <div class="section-info text-left">
-                                                        <div class="countdown">
-                                                            <div id="clock" class="animated" data-animation="fadeIn" data-animation-delay="60"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-5 col-lg-offset-1 col-md-6 svm">
-                                                    <div class="section-info text-right">
-                                                        <!-- START TITLE -->
-                                                        <h2 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="50">
-                                                            YuXLan<br>余小兰……</h2>
-                                                        <!-- END TITLE -->
-                                                        <p class="animated" data-animation="fadeIn" data-animation-delay="55">主攻前端<br/>一点点后端</p>
-                                                        <a href="#" class="btn go-slide animated" data-animation="fadeIn" data-animation-delay="60" data-slide="subscribe">更多资料</a>
-                                                        <a href="#" class="btn btn-inverse go-slide animated" data-animation="fadeIn" data-animation-delay="60" data-slide="contact">给些建议</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END SLIDE CONTENT-->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END CONTAINER -->
-                        </div>
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
+						
+					</div>
+					<!--end threecol -->
+					
+				</div>
+				<!--end twelvecol -->
+				
+			</div>
+			<!--end row -->
+			
+		</div>
+		<!--end nine_section -->
+		 
+	</section>
+	<!--end nine_section_wrapper -->
+	
+	<!-- begin features_wrapper -->
+	<div class="features_wrapper">
+		
+		<!-- begin features_box -->
+		<div class="features_box">
+			 
+			<!-- begin row -->
+			<div class="row">
+				
+				<!-- begin twelvecol -->
+				<div class="twelvecol">
 
-                        <!-- SUBSCRIBE SECTION -->
-                        <div class="slide-item" data-slide-id="subscribe">
-                            <!-- START CONTAINER -->
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
+					<!--begin threecol -->
+					<div class="threecol">
 
-                                        <!-- START SLIDE CONTENT-->
-                                        <div class="slide-content">
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
+									<!-- 放项目截图 -->
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
 
-                                            <div class="row">
-                                                <div class="col-lg-3 col-lg-offset-2 col-md-5 col-md-offset-1 col-md-push-7 svm">
-                                                    <div class="section-info text-right">
-                                                        <!-- START TITLE -->
-                                                        <h2 class="section-title text-default animated" data-animation="fadeIn" data-animation-delay="60">个人概况</h2>
-                                                        <!-- END TITLE -->
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-md-pull-3 svm">
-                                                    <div class="section-info text-left">
-                                                        <!-- START RESUME　TABLE -->
-                                                        <table class="table-font">
-                                                            <tr>
-                                                                <td>姓名：</td>
-                                                                <td>余小兰</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>性别：</td>
-                                                                <td>女</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>户籍：</td>
-                                                                <td>浙江省杭州市</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>学历：</td>
-                                                                <td>本科</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>专业：</td>
-                                                                <td>软件工程</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>毕业院校：</td>
-                                                                <td>杭州电子科技大学</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>出生日期：</td>
-                                                                <td>1996.5.16</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>联系方式：</td>
-                                                                <td>13735501806</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>通讯地址：</td>
-                                                                <td>浙江省杭州市余杭区仁和镇葛墩村</td>
-                                                            </tr>
-                                                        </table>
-                                                        <!-- END RESUME TABLE -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END SLIDE CONTENT-->
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END CONTAINER -->
-                        </div>
+					</div>
+					<!--end threecol -->
 
-                        <!-- ABOUT SECTION -->
-                        <div class="slide-item" data-slide-id="about">
-                            <!-- START CONTAINER -->
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
+					<!--begin threecol -->
+					<div class="threecol">
 
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END CONTAINER -->
-                        </div>
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
+									<!-- 放项目截图 -->
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
 
-                        <!-- SERVICES SECTION -->
-                        <div class="slide-item" data-slide-id="services">
-                            <!-- START CONTAINER -->
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
+					</div>
+					<!--end threecol -->
 
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END CONTAINER -->
-                        </div>
+					<!--begin threecol -->
+					<div class="threecol">
 
-                        <!-- CONTACT SECTION -->
-                        <div class="slide-item" data-slide-id="contact">
-                            <!-- START CONTAINER -->
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- START SLIDE CONTENT-->
-                                        <div class="slide-content">
-                                            <div class="row">
-                                                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-push-6 svm">
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item">
+							<div class="icon_wrapper">
+								<div class="icon_box">
+									<!-- 放项目截图 -->
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
 
-                                                    <div class="section-info text-right">
-                                                        <!-- START TITLE -->
-                                                        <h3 class="section-title text-default animated" data-animation="fadeIn">欢迎交流</h3>
-                                                        <!-- END TITLE -->
-                                                        <div class="contact-info">
-                                                            <p class="contact-item"><i class="fa fa-phone"></i> 电话: 13735501806</p>
-                                                            <p class="contact-item"><i class="fa fa-envelope"></i> 邮箱: 1763630782@qq.com</p>
-                                                            <p class="contact-item"><i class="fa fa-map-marker"></i> 浙江 杭州 </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-md-pull-6 svm">
-                                                    <div class="section-info text-left">
-                                                        <!-- START CONTACT FORM -->
-                                                        <!-- END CONTACT FORM -->
-                                                    </div>
-                                                </div>
-                                            </div>
+					</div>
+					<!--end threecol -->
 
-                                        </div>
-                                        <!-- END SLIDE CONTENT-->
-                                    </div>
-                                </div>
-                                <!-- END ROW -->
-                            </div>
-                            <!-- END CONTAINER -->
-                        </div>
+					<!--begin threecol -->
+					<div class="threecol last">
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END SECTION -->
-    </main>
-    <!-- END MAIN -->
+						<!--begin services_homepage_item -->
+						<div class="services_homepage_item last">
+							<div class="icon_wrapper">
+								<div class="icon_box">
 
+								</div>
+							</div>
+							<h2> </h2>
+							<p> </p>
+							<a href="#" class="services_button">详情MORE</a>
+						</div>
+						<!--end services_homepage_item -->
+					</div>
+					<!--end threecol -->
+					
+				</div>
+				<!-- end twelvecol -->
+				
+			</div>
+			<!-- end row -->
+		
+		</div>
+		<!-- end features_box -->
+		
+	</div>
+	<!-- end features_wrapper -->
+	
+	<!--begin info_white_wrapper -->
+	<div id="features" class="info_white_wrapper">
+		
+		<!--begin info_white -->
+		<div class="info_white bounce_fade">
+			<h3> </h3>
+			<h4> </h4>
+		</div>
+		<!--end info_white -->
+			
+	</div>
+	<!--end info_white_wrapper -->
 
-    <footer id="awd-site-footer">
-        <!-- START COPYRIGHT -->
-        <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="500">
-            <p>writed in © 2016.5</p>
-        </div>
-        <!-- END COPYRIGHT -->
-
-        <!-- START SOCIAL ICONS -->
-        <nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="500">
-            <ul>
-                <li title="微博"><a href="http://weibo.com/5287171180/profile?topnav=1&wvr=6"><i class="fa fa-weibo"></i></a></li>
-                <li title="github"><a href="https://github.com/yuxlan"><i class="fa fa-github"></i></a></li>
-                <li title="codepen"><a href="https://codepen.io/YuXLan/"><i class="fa fa-codepen"></i></a></li>
-            </ul>
-        </nav>
-        <!-- END SOCIAL ICONS -->
-    </footer>
-
+	<!--begin nine_section_wrapper -->
+	<section class="nine_section_wrapper">
+		
+		<!--begin nine_section -->
+		<div class="nine_section up_fade">
+	   
+			<!--begin row -->
+			<div class="row">
+			
+				<!--begin twelvecol -->
+				<div class="twelvecol">
+					
+					<!--begin price_item -->
+					<div class="threecol price_item">
+					 
+						<div class="price_head">
+							<h2> </h2>
+							<h4> </h4>
+						</div>
+						
+						<ul class="price_features">  
+							<li> </li>
+						</ul> 
+												  
+						<div class="price_button_wrapper">
+							<a href="#" class="price_button">阅读READ</a>
+						</div>
+						
+					</div>
+					<!--end price_item -->
+					
+					<!--begin price_item -->
+					<div class="threecol price_item">
+					 
+						<div class="price_head">
+							<h2> </h2>
+							<h4> </h4>
+						</div>
+						
+						<ul class="price_features">  
+							<li> </li>
+						</ul>  
+												  
+						<div class="price_button_wrapper">
+							<a href="#" class="price_button">阅读READ</a>
+						</div>
+						
+					</div>
+					<!--end price_item -->
+					
+					<!--begin price_item -->
+					<div class="threecol price_item">
+					 
+						<div class="price_head">
+							<h2> </h2>
+							<h4> </h4>
+						</div>
+						
+						<ul class="price_features">  
+							<li> </li>
+						</ul>  
+												  
+						<div class="price_button_wrapper">
+							<a href="#" class="price_button">阅读READ</a>
+						</div>
+						
+					</div>
+					<!--end price_item -->
+					
+					<!--begin price_item -->
+					<div class="threecol last price_item">
+					 
+						<div class="price_head">
+							<h2> </h2>
+							<h4> </h4>
+						</div>
+						
+						<ul class="price_features">  
+							<li> </li>
+						</ul>
+												  
+						<div class="price_button_wrapper">
+							<a href="#" class="price_button">阅读READ</a>
+						</div>
+						
+					</div>
+					<!--end priceitem -->
+					
+				</div>
+				<!--end twelvecol -->
+				
+			</div>
+			<!--end row -->
+			
+		</div>
+		<!--end nine_section -->
+		 
+	</section>
+	<!--end nine_section_wrapper -->
+	
+	<!-- begin newsletter_wrapper -->
+	<div id="subscribe" class="newsletter_wrapper">
+		
+		<!--begin info_transparent -->
+		<div class="info_transparent bounce_fade">
+			<h3>欢迎来信交流。</h3>
+			<h4>感谢。</h4>
+		</div>
+		<!--end info_transparent -->
+		
+		<!-- begin newsletter_box -->
+		<div class="newsletter_box">
+			 
+			<!-- begin row -->
+			<div class="row">
+				
+				<!-- begin twelvecol -->
+				<div class="twelvecol">
+				
+					<!--begin newsletter form -->
+					<div class="contact_form_wrap bounce_fade">
+						<p class="success_box" style="display:none;">Thank You.</p>
+						<form id="contact-form" class="contact_form" action="contact.php" method="post">
+							<input id="email" name="cf_email" placeholder="您的建议" />
+							<input type="submit" value="发送" id="submit-button" />
+						</form>
+					</div>
+					<!--end newsletter form -->
+					
+				</div>
+				<!-- end twelvecol -->
+				
+			</div>
+			<!-- end row -->
+		
+		</div>
+		<!-- end newsletter_box -->
+		
+	</div>
+	<!-- end newsletter_wrapper -->
+	
+	<!--begin footer -->
+	<footer id="footer">
+		
+		<!--begin row -->
+		<div class="row">
+			
+			<!--begin twelvecol -->
+			<div class="twelvecol">  
+		
+				<!--begin footer_logo icons -->
+				<span class="footer_logo">YuXLan</span>
+				<!--end footer_logo icons -->
+				
+				<!--begin social icons -->
+				<ul class="social">
+					<li>
+						<a href="#">
+							<i class="fa fa-weibo contact-icon-circle"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-github contact-icon-circle"></i>
+						</a>
+					</li>
+				</ul>
+				<!--end social icons -->
+				
+				<div class="footer_line"><span></span></div>
+				
+				<!--begin copyright -->            
+				<p class="copyright">Copyright &copy; 2016 - </p>
+				<!--end copyright -->
+				
+			</div>
+			<!--end twelvecol -->
+			
+		</div>
+		<!--end row -->
+	
+	</footer>
+	<!--end footer -->
+	   
 </div>
+<!--! end of #container -->
 
-<!-- JS -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/vendor.js"></script>
-<script type="text/javascript" src="js/options.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<!-- END -->
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/modernizr-2.6.1.min.js"></script>
+<script src="js/conditional.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.inview.js"></script>
+
+<!-- begin jquery.sticky script-->
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script>
+	$(window).load(function(){
+	  $("#header_wrapper").sticky({ topSpacing: 0 });
+	});
+</script>
+<!-- end jquery.sticky script-->
+
+<!-- begin menu scrollTo script-->
+<script src="js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function() {	
+		/* This code is executed after the DOM has been completely loaded */
+			
+			$("#nav li a").click(function(e){
+	
+				var full_url = this.href;
+				var parts = full_url.split("#");
+				var trgt = parts[1];
+				var target_offset = $("#"+trgt).offset();
+				var target_top = target_offset.top;
+				
+				$('html,body').animate({scrollTop:target_top -80}, 1000);
+					return false;
+				
+			});
+					
+		});
+	})(jQuery);
+</script>
+<!-- end menu scrollTo script-->
+
+<!-- begin menu color script-->
+<script src="js/jquery.nav.js"></script>
+<script>
+$(document).ready(function() {
+	$('#nav').onePageNav({
+	filter: ':not(.external)',
+	scrollThreshold: 0.25
+	});
+});
+</script>
+<!-- end menu color script-->
+
+<!--begin shrink header script -->
+<script>
+$(function(){
+ var shrinkHeader = 50;
+  $(window).scroll(function() {
+	var scroll = getCurrentScroll();
+	  if ( scroll >= shrinkHeader ) {
+		   $('#header_wrapper').addClass('shrink');
+		}
+		else {
+			$('#header_wrapper').removeClass('shrink');
+		}
+  });
+function getCurrentScroll() {
+	return window.pageYOffset;
+	}
+});
+</script>
+<!--end shrink header script -->
 
 </body>
 </html>
