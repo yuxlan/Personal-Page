@@ -1,7 +1,8 @@
 Menu:
   Home: 首页
-  Archives: 归档
-  Github: 交友
+  Archives: 分类汇总
+  About: 关于
+  Github: 作品集
 
 Paginator:
   Prev: 上一页

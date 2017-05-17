@@ -1,8 +1,53 @@
-<!-- html的head -->
+<!-- THE HEAD OF HTML FILES -->
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="<%= config.description %>">
+  <meta name="keyword" content="<%= config.keyword %>">
+
+  <link rel="shortcut icon" href="<%- config.favicon %>">
+
   <title><%= config.title %></title>
+
+  <!-- NORMALIZE CSS -->
+  <%- css('css/normalize.css') %>
+
+  <!-- BOOTSTRAP CSS -->
+  <%- css('css/bootstrap.min.css') %>
+
+  <!-- FONTAWESOME -->
+  <%- css('css/font-awesome/css/font-awesome.css') %>
+
+  <!-- PLUGIN -->
+  <%- css('css/magnific-popup.css') %>
+  <%- css('css/slider-pro.css') %>
+  <%- css('css/owl.carousel.css') %>
+  <%- css('css/owl.theme.css') %>
+  <%- css('css/owl.transitions.css') %>
+  <%- css('css/animate.css') %>
+
+  <!-- MAINSTYLE -->
   <%- css('css/style.css') %>
+
+  <!-- BASIC JS -->
+  <%- js('js/bootstrap.min.js') %>
+  <%- js('js/jquery.min.js') %>
+  <%- js('js/modernizr.min.js') %>
+  <%- js('js/jquery.easing.js') %>
+  <%- js('js/jquery.scrollUp.min.js') %>
+  <%- js('js/smooth-scroll.min.js') %>
+  <%- js('js/jquery.magnific-popup.min.js') %>
+  <%- js('js/jquery.sliderPro.min.js') %>
+  <%- js('js/owl.carousel.min.js') %>
+  <%- js('js/jquery.easypiechart.js') %>
+  <%- js('js/jquery.countTo.js') %>
+  <%- js('js/isotope.pkgd.min.js') %>
+  <%- js('js/jquery.stellar.min.js') %>
+  <%- js('js/jquery.waypoints.min.js') %>
+  <%- js('js/wow.min.js') %>
+  <%- js('js/jquery.nav.js') %>
+  <%- js('js/custom.js') %>
+
 </head>
