@@ -1,16 +1,40 @@
-<!-- 页面的导航部分 -->
+<!-- THE HEADER + NAV -->
 
-<header class="header">
-  <div class="blog-title">
-    <a href="<%- url_for() %>" class="logo"><%= config.title %></a>
-  </div>
-  <nav class="navbar">
-    <ul class="menu">
-      <% for (name in theme.menu) { %>
-        <li class="menu-item">
-          <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
-        </li>
-      <% } %>
-    </ul>
-  </nav>
+
+<header>
+    <!-- Nav Menu start-->
+    <nav class="navbar clean-main-menu" role="navigation">
+        <div class="container">
+
+            <!-- Nav Toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html" id="logo">
+                    <%= config.title %>
+                </a>
+
+            </div>
+            <!-- Nav Toggle End -->
+
+            <!-- Nav-collapse start-->
+            <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
+                <ul class="nav navbar-nav clean-menu-wrapper">
+                    <% for (name in theme.menu) { %>
+                    <li class="active">
+                        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+            <!-- Nav-collapse End-->
+
+        </div>
+    </nav>
+    <!-- Nav Menu End-->
 </header>
