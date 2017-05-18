@@ -1,13 +1,32 @@
 <!-- 文章详情页对应的布局文件 -->
 
-<article class="post">
-  <div class="post-title">
-    <h2 class="title"><%= page.title %></h2>
-  </div>
-   <div class="post-meta">
-    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-  </div>
-  <div class="post-content">
-    <%- page.content %>
-  </div>
-</article>
+
+<section id="offer" class="clean-section-wrapper clean-offer-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Blogs -->
+            <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header-1 wow fadeInDown">
+                <h1>
+                    <span class="clean-color-contras">
+                        <%= page.title %>
+                    </span>
+                </h1>
+                <div class="clean-line"></div>
+                <div class="post-meta text-center">
+                    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+                </div>
+                <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                    <%- page.content %>
+                </p>
+            </div>
+            <!-- Blogs End -->
+
+            <!-- Pageing -->
+            <div class="pager-position">
+                <%- partial('_partial/paginator') %>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+<!-- 文章归档页 -->
+
+<section class="archive">
+    <h5>
+        最新
+    </h5>
+      <ul class="post-archive">
+        <% page.posts.each(function (post) { %>
+          <li class="post-item">
+            <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+          </li>
+        <% }) %>
+      </ul>
+</section>

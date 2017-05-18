@@ -25,7 +25,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
- // background-image: url(../images/preloader.gif);
+ /* background-image: url(../images/preloader.gif);*/
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -112,7 +112,7 @@ h1{
 }
 
 h2{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3{
@@ -269,7 +269,7 @@ a:active{
   text-align: center;
   line-height: 107px;
   padding: 8px;
- // background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 123px auto;
+ /* background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 123px auto;*/
   color: #F1F1F1 !important;
   font-size: 45px;
 }
@@ -294,7 +294,7 @@ a:active{
   text-align: center;
   line-height: 0;
   padding: 8px;
- // background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 123px auto;
+ /* background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 123px auto;*/
 }
 
 .clean-blurb-round-icon .clean-icon i{
@@ -406,27 +406,45 @@ a:active{
   margin: 20px auto;
 }
 
-  /*
 section {
-  background: url('<%= config["top-img"] %>') bottom center no-repeat,
-          url('<%= config["bottom-img"] %>') top center no-repeat;
+/*  background: url('<%= config["top-img"] %>') bottom center no-repeat,
+          url('<%= config["bottom-img"] %>') top center no-repeat;*/
   background-size: 60px;
   border-bottom: 3px solid #33302d;
   border-top: 3px solid #33302d;
 }
-*/
 
 /* ===================================
 	SECTIONS
 ====================================== */
+.row-width {
+  width: 90%;
+  margin-left: 5%;
+}
+
 .clean-section-wrapper{
   padding: 120px 0;
   overflow: hidden;
 }
 
 .clean-section-header{
-  //text-align: center;
+  /*text-align: center;*/
   margin-bottom: 120px;
+  width: 68%;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.clean-section-header-1{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.clean-section-header-1 h1{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #313131;
 }
 
 .clean-section-header h1{
@@ -439,18 +457,27 @@ section {
 .clean-section-header h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 30px;
-  color: #313131;
+  font-size: 25px;
+  color: #000;
 }
 
-.clean-section-header h2 span{
+.clean-section-header h2 a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.clean-section-header-1 p{
+  font-family: 'Raleway', sans-serif;
 }
 
 .clean-section-header p{
   font-family: 'Raleway', sans-serif;
+}
+
+.archive-position {
+  width: 27%;
+  margin-left: 73%;
 }
 
 /* Parallax Section*/
@@ -585,7 +612,7 @@ header.clean-page-header .clean-main-menu.minified{
 .clean-main-slides p{
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 30px !important;
+  font-size: 17px !important;
   color: #ffffff;
   margin-bottom: 0;
 }
@@ -611,7 +638,7 @@ header.clean-page-header .clean-main-menu.minified{
   height: 40px;
   margin: 4px;
   width: 40px;
- // background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 20px auto;
+ /* background: transparent url('<%= config['full-img'] %>') no-repeat scroll center center / 20px auto;*/
 }
 
 
@@ -1084,7 +1111,7 @@ footer ul li{
   margin-right: 15px;
   padding: 8px 10px;
   width: 50px;
-  //background: url('<%= config['full-img'] %>') center no-repeat;
+  /*background: url('<%= config['full-img'] %>') center no-repeat;*/
   background-size: 45px;
   height: 50px;
   line-height: 40px

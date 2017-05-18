@@ -26,8 +26,10 @@
             <div id="nav-menu" class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav clean-menu-wrapper">
                     <% for (name in theme.menu) { %>
-                    <li class="active">
-                        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
+                    <li>
+                        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link">
+                            <%- __('Menu.' + name) %>
+                        </a>
                     </li>
                     <% } %>
                 </ul>
