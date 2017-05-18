@@ -1,47 +1,39 @@
 <!-- ALL THE BLOGS AND THE MAIN PAGE -->
 
 <!-- Slider Section -->
-<style>
-    section {
-        background: url('<%= config["top-img"] %>') bottom center no-repeat,
-        url('<%= config["bottom-img"] %>') top center no-repeat;
-        background-size: 60px;
-        border-bottom: 3px solid #33302d;
-        border-top: 3px solid #33302d;
-    }
-</style>
 
 <%- partial('_partial/slider') %>
 
 <section id="offer" class="clean-section-wrapper clean-offer-section ">
-    <div class="container">
-        <div class="row">
+        <div class="row-width">
 
             <!-- Blogs -->
             <% page.posts.each(function (post) { %>
                 <div class="col-md-12 col-sm-12 col-xs-12 clean-section-header wow fadeInDown">
-                    <h3>
+                    <h2>
                         <a class="clean-color-contras" href="<%- url_for(post.path) %>">
-                            <%= post.title %>
+                            <%= truncate(strip_html(post.title), {length: 8, omission: '...'}) %>
                         </a>
-                    </h3>
-                    <div class="clean-line"></div>
-                    <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
-                        <%- truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
-                    </p>
+                    </h2>
                     <div class="post-meta">
-                        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+                        <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %><br/><br/></span>
                     </div>
+                    <p class="col-md-offset-1">
+                        <%- truncate(strip_html(post.content), {length: 100, omission: '......'}) %>
+                        <br/><br/>
+                    </p>
                 </div>
             <% }) %>
             <!-- Blogs End -->
+
+            <div class="archive-position">
+                <%- partial('_partial/archive') %>
+            </div>
 
             <!-- Pageing -->
             <div class="pager-position">
                 <%- partial('_partial/paginator') %>
             </div>
 
-            </div>
         </div>
-    </div>
 </section>
