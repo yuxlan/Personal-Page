@@ -1,7 +1,13 @@
 <!-- 文章详情页对应的布局文件 -->
 
 
-<section id="offer" class="clean-section-wrapper clean-offer-section">
+<%- partial('_partial/titleimage') %>
+
+<section id="offer" class="clean-section-wrapper-1 clean-offer-section"
+         style="background: url('<%= config["top-img"] %>') bottom center no-repeat;
+                 background-size: 60px;">
+
+
     <div class="container">
         <div class="row">
 
@@ -18,9 +24,32 @@
                 </div>
                 <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
                     <%- page.content %>
+                    <br/><br/>
                 </p>
+
+                <!-- Next blog -->
+                <div class="pager-position">
+                    <ul class="pager">
+                        <% if (page.prev){ %>
+                        <li class="previous">
+                            <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top"
+                               title="<%- page.prev.title %>">&larr; 上一篇</a>
+                        </li>
+                        <% } %>
+                        <% if (page.next){ %>
+                        <li class="next">
+                            <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top"
+                               title="<%- page.next.title %>">下一篇 &rarr;</a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+                <!-- END -->
+
             </div>
             <!-- Blogs End -->
+
+
 
         </div>
     </div>

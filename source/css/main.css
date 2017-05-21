@@ -409,9 +409,6 @@ a:active{
 section {
 /*  background: url('<%= config["top-img"] %>') bottom center no-repeat,
           url('<%= config["bottom-img"] %>') top center no-repeat;*/
-  background-size: 60px;
-  border-bottom: 3px solid #33302d;
-  border-top: 3px solid #33302d;
 }
 
 /* ===================================
@@ -425,7 +422,15 @@ section {
 .clean-section-wrapper{
   padding: 120px 0;
   overflow: hidden;
+  border-bottom: 3px solid #33302d;
+  border-top: 3px solid #33302d;
 }
+
+.clean-section-wrapper-1{
+   padding: 120px 0;
+   overflow: hidden;
+   border-bottom: 3px solid #33302d;
+ }
 
 .clean-section-header{
   /*text-align: center;*/
@@ -435,6 +440,7 @@ section {
 }
 
 .clean-section-header-1{
+  margin-bottom: 180px;
   width: 90%;
   margin-left: 5%;
 }
@@ -443,7 +449,7 @@ section {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   color: #313131;
 }
 
@@ -455,11 +461,11 @@ section {
 }
 
 .clean-section-header h2{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  color: #000;
-}
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   font-size: 25px;
+   color: #000;
+ }
 
 .clean-section-header h2 a{
   font-family: 'Montserrat', sans-serif;
