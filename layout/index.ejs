@@ -4,7 +4,9 @@
 
 <%- partial('_partial/slider') %>
 
-<section id="offer" class="clean-section-wrapper clean-offer-section ">
+<section id="offer" class="clean-section-wrapper clean-offer-section "
+        style="background: url('<%= config["top-img"] %>') bottom center no-repeat;
+                background-size: 60px;">
         <div class="row-width">
 
             <!-- Blogs -->
@@ -27,7 +29,7 @@
             <!-- Blogs End -->
 
             <div class="archive-position">
-                <%- partial('_partial/archive') %>
+                <%- partial('/archive') %>
             </div>
 
             <!-- Pageing -->
